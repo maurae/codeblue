@@ -6,8 +6,13 @@ h1 {
 
 }
 
+
+
+h1, h2, h3, h4, h5, h6, .navbar {
+	margin:0;
+}
+
 .navbar {
-	
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
 	font-size: 18px;
@@ -19,9 +24,42 @@ h1 {
 
 .navbar-inverse a.navbar-brand {
 	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	font-size: 25px;
-	color: #3AE096;
+	font-weight: 350;
+	font-size: 30px;
+	color: #37849d;
 
 
+}
+
+.hero {
+	background: url('hero.jpg') no-repeat center center fixed; 
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 370px;
+	box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.frosty {
+	background:rgba(0,0,0, 0.3);
+	color: white;
+}
+
+.frosty h1 { 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+	text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.frosty h2 {
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+.btn {
+	border-radius:0;
 }
