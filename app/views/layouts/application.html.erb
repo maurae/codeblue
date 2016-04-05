@@ -8,7 +8,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    
+
+<!-- Top Nav Bar-->   
 <div class="navbar navbar-inverse navbar-static-top">
  <div class="navbar-header"><a class="navbar-brand" href="#">code {blue}</a>
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,12 +19,18 @@
       </a>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">View Courses</a></li>
-      </ul>
-      <div class="navbar-right">
-      <p class="navbar-text">Let's build something</p>
+      <div class= "navbar-right">
+        <ul class="nav navbar-nav">   
+          <li><a href="#">View Courses</a></li>
+          
+          <% if user_signed_in? %>
+            <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to 'Sign in', new_user_session_path %></li>
+            <li><%= link_to 'Sign Up',  new_user_registration_path %></a></li>
+          <% end %>
+         
+        </ul>
       </div>
     </div>
 </div>
@@ -38,5 +45,7 @@
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
 <% if alert.present? %>
-  <p class="alert alert-danger"><%= alert %></p>
+<p class="alert alert-danger"><%= alert %></p>
 <% end %>
+
+
