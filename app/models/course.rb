@@ -1,5 +1,7 @@
 class Course < ActiveRecord::Base
 	belongs_to :user
+	belongs_to :sections
+	has_many :sections
 
 	validates :title, presence: true
 	validates :description, presence: true
