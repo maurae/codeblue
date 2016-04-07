@@ -22,7 +22,9 @@
       <div class="navbar-collapse collapse">
         <div class= "navbar-right">
           <ul class="nav navbar-nav">   
-            <li><a href="#">View Courses</a></li>
+            <li>
+              <%= link_to 'View All Courses', courses_path %>
+            </li>
             
             <% if user_signed_in? %>
               <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
