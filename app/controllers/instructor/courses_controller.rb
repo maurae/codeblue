@@ -15,8 +15,8 @@ class Instructor::CoursesController < ApplicationController
    	 	end
   	end
 
- 	def show
-  end
+ 	  def show
+    end
 
   	private
   	def require_authorized_for_current_course
@@ -25,10 +25,11 @@ class Instructor::CoursesController < ApplicationController
     	end
   	end
   
-  	helper_method :current_course
-  	def current_course
-    	@current_course ||= Course.find(params[:id])
-  	end
+  	  
+    helper_method :current_course
+    def current_course
+      @current_course ||= Course.find(params[:id])
+    end
 
   	def course_params
     	params.require(:course).permit(:title, :description, :cost)
