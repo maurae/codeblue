@@ -33,7 +33,8 @@ gem 'sprockets', '2.11.0'
 gem 'devise'
 gem 'simple_form'
 gem 'carrierwave'
-
+gem 'figaro'
+gem 'fog', '1.3.1'
 ruby "2.0.0"
 
 
