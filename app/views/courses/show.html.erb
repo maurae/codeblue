@@ -19,14 +19,12 @@
     <br />
     <br />
 
-    <% if current_user && current_user.enrolled_in?(@course) %>
+  <% if current_user && current_user.enrolled_in?(@course) %>
       <h3 class="label label-info">You Are Enrolled!</h3>
-    <% else %>
+  <% else %>
       <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
-    <% end %>
-  
-
-  </div>
+  <% end %>
+</div>
 
   <div class="col-sm-8 col-xs-12">
     <%= @course.description %>
