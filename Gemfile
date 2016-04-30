@@ -39,6 +39,7 @@ gem 'mini_magick', '~>4.3.1'
 gem 'carrierwave-aws'
 gem 'rake', '~> 11.1.2'
 gem 'stripe'
+gem 'ranked-model'
 
 ruby "2.0.0"
 
