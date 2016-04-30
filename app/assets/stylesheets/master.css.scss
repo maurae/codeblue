@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .hero {
-	background: url('nasa.jpg') no-repeat center center fixed; 
+	background: url('nasa6.jpg') no-repeat center center fixed; 
  	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -74,17 +74,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty h1 { 
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 100;
 	font-size: 50px;
-	text-shadow: rgba(0,0,0,0.95) 1px 1px;
+	text-shadow: rgba(0,0,0,0) 1px 1px;
 }
 
 .frosty h2 {
 
 	font-family: 'Helvetica Neue', Helvetica;
-	font-weight: 200;
-	text-shadow: rgba(0,0,0,0.95) 1px 1px;
+	font-weight: 100;
+	text-shadow: rgba(0,0,0,0) 1px 1px;
 }
 
 .btn {
